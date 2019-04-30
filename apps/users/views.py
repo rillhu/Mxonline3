@@ -90,7 +90,7 @@ class RegisterView(View):
             # 写入欢迎注册消息
             user_message = UserMessage()
             user_message.user = user_profile.id
-            user_message.message = "欢迎注册mtianyan慕课小站!! --系统自动消息"
+            user_message.message = "欢迎注册EUITMOOC!! --系统自动消息"
             user_message.save()
             # 发送注册激活邮件
             send_register_eamil(user_name, "register")

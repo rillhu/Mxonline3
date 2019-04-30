@@ -26,8 +26,8 @@ class BaseSetting(object):
 
 class GlobalSettings(object):
     """xadmin 全局配置参数信息设置"""
-    site_title = "天涯明月笙: 慕课后台管理站"
-    site_footer = "mtianyan's admin"
+    site_title = "EUIT MOOC Background"
+    site_footer = "EUIT's admin"
     # 收起菜单
     # menu_style = "accordion"
 

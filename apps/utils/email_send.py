@@ -49,7 +49,7 @@ def send_register_eamil(email, send_type="register"):
     email_body = ""
 
     if send_type == "register":
-        email_title = "mtianyan慕课小站 注册激活链接"
+        email_title = "EUIT MOOC 注册激活链接"
         # email_body = "欢迎注册mtianyan的慕课小站:  请点击下面的链接激活你的账号: http://127.0.0.1:8000/active/{0}".format(code)
 
         email_body = loader.render_to_string(
@@ -69,7 +69,7 @@ def send_register_eamil(email, send_type="register"):
         if send_status:
             pass
     elif send_type == "forget":
-        email_title = "mtianyan慕课小站 找回密码链接"
+        email_title = "EUIT MOOC 找回密码链接"
         email_body = loader.render_to_string(
             "email_forget.html",  # 需要渲染的html模板
             {
@@ -80,7 +80,7 @@ def send_register_eamil(email, send_type="register"):
         msg.content_subtype = "html"
         send_status = msg.send()
     elif send_type == "update_email":
-        email_title = "mtianyan慕课小站 修改邮箱验证码"
+        email_title = "EUIT MOOC 修改邮箱验证码"
         email_body = loader.render_to_string(
             "email_update_email.html",  # 需要渲染的html模板
             {

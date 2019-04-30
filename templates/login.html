@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
-	<title>登录|mtianyan慕课小站</title>
+	<title>登录|EUIT MOOC</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
 </head>
@@ -37,9 +37,9 @@
 <header>
     <div class="c-box fff-box">
         <div class="wp header-box">
-            <p class="fl hd-tips">mtianyan慕课小站，在线学习平台！</p>
+            <p class="fl hd-tips">EUIT MOOC，在线学习平台！</p>
             <ul class="fr hd-bar">
-                <li>服务电话：<span>23333333</span></li>
+                <li>服务电话：<span>88730000</span></li>
                 <li class="active"><a href="{% url 'login' %}">[登录]</a></li>
                 <li><a href="{% url 'register' %}">[注册]</a></li>
             </ul>
@@ -89,7 +89,7 @@
                 <input type="hidden" name="next" value="{{ redirect_url }}" />
                 {% csrf_token %}
                 </form>
-                <p class="form-p">没有mtianyan慕课小站帐号？<a href="{% url 'register' %}">[立即注册]</a></p>
+                <p class="form-p">没有mEUIT MOOC帐号？<a href="{% url 'register' %}">[立即注册]</a></p>
             </div>
         </div>
     </div>
