@@ -26,8 +26,8 @@ class BaseSetting(object):
 
 class GlobalSettings(object):
     """xadmin 全局配置参数信息设置"""
-    site_title = "EUIT MOOC Background"
-    site_footer = "EUIT's admin"
+    site_title = "Artemis Background"
+    site_footer = "Artemis admin"
     # 收起菜单
     # menu_style = "accordion"
 

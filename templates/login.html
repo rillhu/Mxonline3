@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
-	<title>登录|EUIT MOOC</title>
+	<title>登录|Artemis</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
 </head>
@@ -37,7 +37,7 @@
 <header>
     <div class="c-box fff-box">
         <div class="wp header-box">
-            <p class="fl hd-tips">EUIT MOOC，在线学习平台！</p>
+            <p class="fl hd-tips">Artemis在线学习平台！</p>
             <ul class="fr hd-bar">
                 <li>一起进入Artemis的世界：<span>GO！</span></li>
                 <li class="active"><a href="{% url 'login' %}">[登录]</a></li>
@@ -89,7 +89,7 @@
                 <input type="hidden" name="next" value="{{ redirect_url }}" />
                 {% csrf_token %}
                 </form>
-                <p class="form-p">没有EUIT MOOC帐号？<a href="{% url 'register' %}">[立即注册]</a></p>
+                <p class="form-p">没有Artemis帐号？<a href="{% url 'register' %}">[立即注册]</a></p>
             </div>
         </div>
     </div>
