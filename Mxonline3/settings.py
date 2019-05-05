@@ -145,10 +145,10 @@ STATICFILES_DIRS = [
 # 发送邮件的setting设置
 
 EMAIL_HOST = "smtp.126.com"
-EMAIL_PORT = 25
+EMAIL_PORT = 465
 EMAIL_HOST_USER = "rillhu@126.com"
-EMAIL_HOST_PASSWORD = ""
-EMAIL_USE_TLS = True
+EMAIL_HOST_PASSWORD = "just4test"
+EMAIL_USE_SSL = True
 EMAIL_FROM = "rillhu@126.com"
 
 # 设置我们上传文件的路径

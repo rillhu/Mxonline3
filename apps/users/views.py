@@ -86,7 +86,6 @@ class RegisterView(View):
             # 加密password进行保存
             user_profile.password = make_password(pass_word)
             user_profile.save()
-
             # 写入欢迎注册消息
             user_message = UserMessage()
             user_message.user = user_profile.id

@@ -58,7 +58,6 @@ def send_register_eamil(email, send_type="register"):
                 "active_code": code  # 参数
                 }
             )
-
         msg = EmailMessage(email_title, email_body, EMAIL_FROM, [email])
         msg.content_subtype = "html"
         send_status = msg.send()
